@@ -137,11 +137,37 @@ body {
 }
 
 #titulo_principal {
-    font-size: 80px;
+    font-size: 6em;
     font-weight: bold;
     text-shadow: 5px 2px 0 rgb(0, 0, 0);
     word-wrap: break-word;
+    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+    @keyframes tracking-in-expand {
+        0% {
+            letter-spacing: -0.5em;
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0.6;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 768px) {
+        font-size: 4.5em
+    }
+
+    @media (max-width: 576px) {
+        font-size: 3em;
+    }
+
 }
+
 
 /** CORRECCION PARA IFRAME CON YOUTUBE **/
 .iframeyoutube {
