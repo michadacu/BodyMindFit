@@ -183,3 +183,11 @@ body {
         height: 100%;
     }
 }
+
+.efecto_subrayado {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline $color_tematico;
+    }
+}

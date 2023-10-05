@@ -164,4 +164,11 @@ body {
   height: 100%;
 }
 
+.efecto_subrayado {
+  text-decoration: none;
+}
+.efecto_subrayado:hover {
+  text-decoration: underline rgb(41, 41, 155);
+}
+
 /*# sourceMappingURL=style.css.map */
