@@ -122,6 +122,14 @@ body {
     }
 }
 
+.efecto_subrayado {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline $color_tematico;
+    }
+}
+
 /** ESTILOS FORMULARIO **/
 
 .form-control:focus {
@@ -168,6 +176,45 @@ body {
 
 }
 
+/** ANIMACIONES **/
+.titulo_secundario {
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+    @keyframes slide-in-top {
+        0% {
+            transform: translateY(-1000px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+}
+
+.parrafo_contacto {
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+    @keyframes text-focus-in {
+        0% {
+
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+
+            filter: blur(0px);
+            opacity: 1;
+        }
+    }
+}
+
+
+
+
 
 /** CORRECCION PARA IFRAME CON YOUTUBE **/
 .iframeyoutube {
@@ -181,13 +228,5 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-    }
-}
-
-.efecto_subrayado {
-    text-decoration: none;
-
-    &:hover {
-        text-decoration: underline $color_tematico;
     }
 }
