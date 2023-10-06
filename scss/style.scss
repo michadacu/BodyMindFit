@@ -12,10 +12,10 @@
 }
 
 /**VARIABLES**/
-$color_primario: rgb(169, 169, 169);
-$color_secundario: rgb(55, 55, 55);
+$color_primario: rgb(165, 201, 202);
+$color_secundario: rgb(44, 51, 51);
 $color_texto: white;
-$color_tematico: rgb(41, 41, 155);
+$color_tematico: rgb(57, 91, 100);
 
 /** APLICACION DE TIPO DE FUENTE **/
 @font-face {
@@ -212,10 +212,6 @@ body {
     }
 }
 
-
-
-
-
 /** CORRECCION PARA IFRAME CON YOUTUBE **/
 .iframeyoutube {
     position: relative;
@@ -229,4 +225,13 @@ body {
         width: 100%;
         height: 100%;
     }
+}
+
+.navbar,
+footer {
+    background-color: $color_primario !important;
+}
+
+.bg-dark {
+    background-color: $color_secundario !important;
 }
